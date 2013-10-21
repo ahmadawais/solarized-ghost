@@ -1,6 +1,6 @@
 # ZN80
 
-This is my design for [http://zn80.net](zn80.net) based on the default theme Casper for [Ghost](http://github.com/tryghost/ghost/).
+This is my design for [http://zn80.net](http://zn80.net) based on the default theme Casper for [Ghost](http://github.com/tryghost/ghost/).
 
 # What's inside
 
