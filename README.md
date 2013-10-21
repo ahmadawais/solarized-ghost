@@ -1,4 +1,4 @@
-# ZN80
+# Solarized Ghost
 
 This is my design for my blog at [http://zn80.net](http://zn80.net) based on the default theme Casper for [Ghost](http://github.com/tryghost/ghost/) and inspired by the [Solarized Design by Ethan Schonoover](http://ethanschoonover.com/solarized).
 
