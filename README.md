@@ -2,6 +2,28 @@
 
 This is my design for [http://zn80.net](zn80.net) based on the default theme Casper for [Ghost](http://github.com/tryghost/ghost/).
 
+# What's inside
+
+This basic theme comes with
+- header
+- blog title
+- blog description
+- post header
+- post meta
+- post footer
+- every post has a sharing link for Twitter, App.net and Google+ (I don't like facebook)
+- index page shows full post content. If you want, you can change this to show excerpt again (see Casper Theme index.hbs)
+
+
+# Changelog
+
+## v 1.0
+
+This version is the inital version. When Ghost is updated, I will update this theme to reflect the changes in the Ghost core and Ghost themes. I really want to get the Linked-List feature and will include it in the theme when Ghost supports the feature.
+
+
+
+
 ## Copyright & License
 
 Copyright (C) 2013 Carsten Brueggenolte - Released under the MIT License.
