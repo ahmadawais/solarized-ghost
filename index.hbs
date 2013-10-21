@@ -1,0 +1,51 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+
+    <article class="{{post_class}}">
+        <header class="post-header">
+            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+            <span class="post-meta">
+            [ 
+                <time datetime="{{date format="dddd, DD MMM YYYY"}}">{{date format='dddd, DD MMM YYYY'}}</time>
+                <span> | </span>
+                {{#if tags}}{{tags}} <span> | </span> {{/if}}
+
+                <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span>Twitter</span>
+                </a>
+                <span> | </span>
+                <a href="https://alpha.app.net/intent/post?text={{title}}%20{{url absolute="true" }}" 
+                    onclick="window.open(this.href, 'appnet-share', 'width=550,height=235');return false;"> 
+                    <span>ADN</span>
+                </a>
+                <span> | </span>
+
+                <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span>Google+</span>
+                </a>
+            ]
+            </span>
+            
+        </header>
+        
+        <section class="post-content">
+            {{content}}
+        </section>
+    </article>
+
+    {{/foreach}}
+
+    {{!! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+
+</main>
